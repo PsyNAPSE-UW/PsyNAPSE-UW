@@ -1,30 +1,47 @@
-<h1 align="center">Lab Website Template</h1>
-<p align="center">
-<img height="200" src="https://raw.githubusercontent.com/greenelab/lab-website-template/main/images/share.jpg?raw=true" alt="Lab Website Template">
-</p>
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/nisarhassan12/portfolio) 
 
-Lab Website Template (LWT) is an easy-to-use, flexible website template for labs.
-Spend less time worrying about managing a website and citations, and more time running your lab.
+# Portfolio
 
-👇👇 **Get Started** 👇👇
+> My portfolio site, which is now open source! <br />
+> Check out the [live site here →][site]
 
-[**Documentation**](https://greene-lab.gitbook.io/lab-website-template-docs)
+![image][screenshot]
 
-## Key Features
+This repo contains the code for a portfolio site that has a rich user-experience, is performant, and accessible. The website is built using HTML, SCSS, vanilla JavaScript, and it doesn't use any CSS or JavaScript libraries or have any framework dependencies. Everyone is welcome to contribute or use it as a template for their portfolio. Please give me (this repo) credit for the theme design.
 
-- 🤖 Based on Git, GitHub, and Jekyll.
-- 📜 Automatically generated citations from simple identifiers (DOI, PubMed, ORCID, and many more) using Manubot. E.g. `doi:1234/5678` -> `title`, `authors`, `publisher`, `date`, etc.
-- 🧱 A comprehensive and flexible suite of pre-made components (building blocks) for structuring and styling your website:
-  - Formatted tables, code blocks, figures, and other basic elements.
-  - Citations with thumbnails and other rich details.
-  - List large sets of data with flexible filters and components.
-  - ...many more
-- 👁️ Automatic pull request previews.
-- ⚙️ Easy and automated configuration.
-- 👥 Team member pages with bios, roles, and social media links.
-- 🖋️ Blog posts with tags and rich content.
-- 📱 Works and looks good on desktop and mobile.
-- 🤝 Great documentation and support (if we do say so ourselves).
-- ... and much more!
+#### Online one-click setup for Contributing
 
-![GitHub last commit](https://img.shields.io/github/last-commit/greenelab/lab-website-template)
+Contribute to the portfolio, using a fully featured online development environment; cloned repo, pre-installed dependencies, running web server.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
+## 🚀 Getting Started
+
+You need [Node.js][node] to develop the site locally on your computer.
+
+### 🔋 Step #1. Install the Dependencies
+
+```sh
+   npm install
+```
+
+### 📟 Step #2. Start the Development Server
+
+```sh
+npm run dev
+```
+
+This will start the development server at [`http://localhost:1234`][local] that you should browse to check the local dev version of this site.
+
+### ♻️ Step #3. Production Build
+
+```sh
+npm run prod
+```
+
+This script will create the production build that contains the site code, which is fast and optimized and minified for production.
+
+[site]: https://nisar.surge.sh
+[screenshot]: https://user-images.githubusercontent.com/46004116/81985654-fd088c00-964f-11ea-8fae-1ce021b729c8.png
+[node]: https://nodejs.org/en/download/
+[local]: http://localhost:1234
