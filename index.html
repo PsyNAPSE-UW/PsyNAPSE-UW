@@ -2,292 +2,176 @@
 <html lang="en">
 
 <head>
-	<!-- HTML Meta Tags -->
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Nisar Hassan | Frontend Web Developer</title>
-	<meta name="description" content="Hi, I am Nisar. I create UX rich performant websites and web applications focusing on user interactions at an
-        expert level." />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Academic Webpage" />
+    <meta name="author" content="senli1073" />
+    <title id="title"></title>
 
-	<!-- Google / Search Engine Tags -->
-	<meta itemprop="name" content="Nisar Hassan | Frontend Web Developer" />
-	<meta itemprop="description" content="Hi, I am Nisar. I create UX rich performant websites and web applications focusing on user interactions at an
-        expert level." />
-	<meta itemprop="image" content="./meta.jpg" />
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
 
-	<!-- Facebook Meta Tags -->
-	<meta property="og:url" content="http://nisar.surge.sh" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Nisar Hassan | Frontend Web Developer" />
-	<meta property="og:description" content="Hi, I am Nisar. I create UX rich performant websites and web applications focusing on user interactions at an
-        expert level." />
-	<meta property="og:image" content="./meta.jpg" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
-	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Nisar Hassan | Frontend Web Developer" />
-	<meta name="twitter:description" content="Hi, I am Nisar. I create UX rich performant websites and web applications focusing on user interactions at an
-        expert level." />
-	<meta name="twitter:image" content="./meta.jpg" />
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet" />
-	<script src="./js/index.js" defer></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- For Compatability -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+    <!-- Markdown -->
+    <script type="text/javascript" src="static/js/marked.min.js"></script>
+
+    <!-- Mathematics -->
+    <script>
+        // See https://docs.mathjax.org/en/latest/index.html for more details.
+        MathJax = {
+            tex: {
+                packages: {},              // extensions to use
+                inlineMath: [              // start/end delimiter pairs for in-line math
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                displayMath: [             // start/end delimiter pairs for display math
+                    ['$$', '$$'],
+                    ['\\[', '\\]']
+                ],
+                processEscapes: false,      // use \$ to produce a literal dollar sign
+                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+                processRefs: true,         // process \ref{...} outside of math mode
+                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
+                tags: 'all',              // or 'ams' or 'all'
+                tagSide: 'right',          // side for \tag macros
+                tagIndent: '0.8em',        // amount to indent tags
+                useLabelIds: true,         // use label name rather than tag for ids
+                maxMacros: 10000,          // maximum number of macro substitutions per expression
+                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
+                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
+                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
+                formatError:               // function called when TeX syntax errors occur
+                    (jax, err) => jax.formatError(err)
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Core JS-->
+    <script type="text/javascript" src="static/js/scripts.js"></script>
+    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+
 </head>
 
-<body>
-	<!-- ***** Navigation ***** -->
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
+            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
+                    </li>
 
-	<div class="navigation">
-		<input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
-		<label for="nav-toggle" class="navigation__button">
-        <span class="navigation__icon" aria-label="toggle navigation menu"
-          >&nbsp;</span
-        >
-      </label>
-		<div class="navigation__background">&nbsp;</div>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<nav class="navigation__nav" role="navigation">
-			<ul class="navigation__list">
-				<li class="navigation__item">
-					<a href="#about" class="navigation__link">About</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#skill" class="navigation__link">Skills</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#work" class="navigation__link">Work</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#popup" class="navigation__link">Hire Me</a>
-				</li>
-				<li class="navigation__item">
-					<a href="#footer" class="navigation__link">Contact</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
+    <!-- Top Section -->
+    <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
+        <div class="top-section-content">
+            <div class="container px-5">
+                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+            </div>
+        </div>
+    </section>
+    <!-- Top Section -->
 
-	<!-- ***** Header ***** -->
+    <!-- Photo -->
+    <div class="container px-5">
+        <div id="avatar">
+            <img class="shadow" src="static/assets/img/photo.png">
+        </div>
+    </div>
+    <!-- Photo -->
+    
+    <!-- Home -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+        <div class="container px-5">
+            <header>
+                <h2 id="home-subtitle"> </h2>
+                <!-- <span class="bi bi-list"></span> -->
+            </header>
+            <div class="main-body" id="home-md"></div>
+        </div>
+    </section>
+    <!-- Home -->
 
-	<header class="header" role="banner" id="header">
-		<div class="header__text-box">
-			<h1 class="heading-primary">Hi! I am Nisar</h1>
-			<p class="header__description">
-				A Web Developer who creates UX rich performant websites and web
-				applications.
-			</p>
-			<a href="#popup" class="btn btn__hire" id="hire">Hire Me &nbsp;&rarr;</a>
-		</div>
-		<!-- <p class="header__director">Scroll Down &darr;</p> -->
-	</header>
+    <!-- Publications -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+        <div class="container px-5">
+            <header>
+                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
+            </header>
+            <div class="main-body" id="publications-md"></div>
 
-	<!-- ***** Main ***** -->
+        </div>
+    </section>
+    <!-- Publications  -->
 
-	<main role="main">
-		<!-- ***** Section Intro ***** -->
+    <!-- Awards -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+        <div class="container px-5">
+            <header>
+                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
+            </header>
+            <div class="main-body" id="awards-md"></div>
 
-		<section class="intro">
-			<div class="row">
-				<h2 class="heading-secondary">Nice to Have You Here</h2>
-				<p class="intro-text">
-					Are You looking for a fast-performing and user-friendly website to
-					represent your product or business? perhaps you are looking for any
-					kind of consultation? or maybe you have an idea you’d like to
-					express but need a professional with vision in order to actually
-					create it? maybe you’d like to collaborate? moreover, feel free to
-					reach out to me with some advice, I’d love to hear some constructive
-					criticism about any of my projects!
-				</p>
-				<a href="https://twitter.com/nisarhassan12" class="btn">Say Hello !</a>
-			</div>
-		</section>
+        </div>
+    </section>
+    <!-- Awards -->
 
-		<!-- ***** Section Skills ***** -->
 
-		<section class="skill" id="skill">
-			<div class="u-text-center">
-				<h2 class="heading-secondary">My Skillset</h2>
-				<p class="intro-text">
-					I have a diverse set of skills from design to
-					<a target="_blank" href="https://www.w3.org/TR/2016/REC-html51-20161101/dom.html">Semantic</a>
-					and well structured HTML + reasonable and efficient CSS along with
-					<a target="_blank" href="https://sass-lang.com/">Sass</a>,
-					<a target="_blank" href="http://getbem.com/">BEM</a> and
-					<a target="_blank" href="https://gist.github.com/rveitch/84cea9650092119527bc">7 - 1 pattern</a>
-					for scss organization + JS (ES6 - ESX,
-					<a target="_blank" href="https://eslint.org/">ESLint</a> for linting
-					JS, <a href="https://babeljs.io/" target="_blank">Babel</a> for
-					transpiling)+
-					<a target="_blank" href="https://reactjs.org/">React</a> ( for
-					building complex UIs ) +
-					<a target="_blank" href="https://redux.js.org/">Redux</a> ( for
-					state management ) + module bundlers like
-					<a target="_blank" href="http://webpack.js.org/">Webpack</a> and
-					<a target="_blank" href="https://parceljs.org/">Parcel. </a>I love
-					things that are open source I use
-					<a target="_blank" href="https://code.visualstudio.com/">VS Code</a>
-					as my editor and
-					<a target="_blank" href="https://www.ubuntu.com/">Ubuntu</a> as My
-					operating system.
-				</p>
-				<a href="#work" class="btn">My Work</a>
-			</div>
-		</section>
+    <!-- Footer-->
+    <footer class="bg-bottom text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div id="copyright-text" class="mb-2"></div>
+                <a id="github-link" href="https://github.com/senli1073">Github</a>
+                <span class="mx-1">&middot;</span>
+                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+            </div>
+        </div>
+    </footer>
 
-		<section class="about" id="about">
-			<div class="u-text-center">
-				<h2 class="heading-secondary">About Me</h2>
-			</div>
-			<p class="intro-text">
-				I am a self-taught Frontend Web Developer from Lahore, Pakistan. About
-				three years ago is when I started my learning journey on how to make
-				the web stunning and responsive. I have always been a curious
-				individual, which is why I’d love to collaborate and do some
-				real-world projects in order to flourish my skills. I'm not perfect,
-				however. I'm very far from perfection, yet I'm resilient, assertive
-				and stubborn and I find learning a fascinating process. I am currently
-				learning about PWAs and my future plan is to learn about ML for Web
-				Performance.
-			</p>
-		</section>
-
-		<!-- ***** Section Craft ***** -->
-
-		<section class="craft">
-			<div class="u-text-center">
-				<h2 class="heading-secondary">My Craft in a Nutshell</h2>
-				<p class="intro-text">
-					I believe simplicity is undervalued and therefore strive to make things as simple as possible. I am
-					also very concerned about best practices and always sacrifice developer experience over user
-					experience.
-					I am also very concerned about best practices and always
-					sacrifice developer experience over user experience.
-				</p>
-			</div>
-
-			<div class="row">
-				<div class="craft__item">
-					<img src="./img/browser-16.svg" alt="Browser" class="craft__img" />
-					<h3 class="heading-tertiary">Front-end</h3>
-					<p class="craft__description">
-						I value simple content structure, clean design patterns, and
-						thoughtful interactions filled with semantics and performance. I
-						tend to code things from scratch and enjoy bringing ideas to life.
-					</p>
-				</div>
-
-				<div class="craft__item hack"></div>
-
-				<div class="craft__item">
-					<img src="./img/browser-26.svg" alt="Server" class="craft__img" />
-					<h3 class="heading-tertiary">Back-end</h3>
-					<p class="craft__description">
-						I am a huge fan of "convention over configuration" and like things
-						that follow "don't repeat yourself" principle, therefore I do my
-						Backend in Ruby on Rails.
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<!-- ***** Section Work ***** -->
-
-		<section class="work" id="work">
-			<div class="u-text-center">
-				<h2 class="heading-secondary">My Work</h2>
-				<p class="intro-text">
-					I am currently working on some Projects, which I will upload to my
-					portfolio as soon as they are done.Here are a few little demos:
-					<a href="https://nisaranimations.surge.sh/">Notifications demo</a>
-					,
-					<a href="https://totaliser.surge.sh/">A calculator</a>
-					,
-					<a href="https://trek101.surge.sh/">A fictional tour's site</a>
-					<br />(Work in Progress).
-          </p>
-					<img src="./img/609732.svg" alt="" class="work__construction" />
-					<a href="#popup" class="btn btn--hire">Hire Me &nbsp;&rarr;</a>
-			</div>
-		</section>
-	</main>
-
-	<!-- ***** Footer ***** -->
-
-	<footer class="footer" id="footer">
-		<nav>
-			<ul class="footer__social-links">
-				<li class="footer__social-link">
-					<a href="https://www.facebook.com/nisarhassan767">Facebook</a>
-				</li>
-				<li class="footer__social-link">
-					<a href="https://twitter.com/nisarhassan12">Twitter</a>
-				</li>
-				<li class="footer__social-link">
-					<a href="https://www.linkedin.com/in/syednisarhassan12/">Linkedin</a>
-				</li>
-				<li class="number">(+92) 3095636143</li>
-				<li>
-					<a href="mailto:syednisarhassan12@gmail.com" class="number">syednisarhassan12@gmail.com</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="footer__outro">
-			<p class="footer__info">
-				Crafted within Lahore by
-				<a href="https://twitter.com/nisarhassan12">Nisar.</a>
-			</p>
-			<p class="footer__info">&copy;2019. All rights reserved.</p>
-		</div>
-	</footer>
-
-	<!-- ***** Popup ***** -->
-
-	<div class="popup" id="popup">
-		<div class="popup__content">
-			<div class="popup__right">
-				<a href="#!" class="popup__close">&times;</a>
-				<div class="popup__top">
-					<h2 class="heading-secondary u-text-center">Curriculum Vitae</h2>
-					<p class="popup__text">Grab My CV to find out more about me.</p>
-					<div class="popup__buttons">
-						<a href="https://drive.google.com/file/d/11Yv8wqgL6MhfloKqqC2cTIPD7t-WDjyb/view?usp=sharing"
-							class="btn">Download</a>
-					</div>
-				</div>
-				<div class="popup__contact-info">
-					<nav>
-						<ul class="footer__social-links">
-							<li class="footer__social-link">
-								<a href="https://www.facebook.com/nisarhassan767">Facebook</a>
-							</li>
-							<li class="footer__social-link">
-								<a href="https://twitter.com/nisarhassan12">Twitter</a>
-							</li>
-							<li class="footer__social-link">
-								<a href="https://www.linkedin.com/in/syednisarhassan12/">Linkedin</a>
-							</li>
-							<li class="number">(+92) 3095636143</li>
-							<li>
-								<a class="number"
-									href="mailto:syednisarhassan12@gmail.com">syednisarhassan12@gmail.com</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<script>
-		const navigation__checkbox = document.querySelector(
-        ".navigation__checkbox"
-      );
-      const navigation__list = document.querySelector(".navigation__list");
-      navigation__list.addEventListener('click', (e) => {
-          if (e.target !== navigation__list) {
-              navigation__checkbox.checked = false;
-          }
-      })
-	</script>
 </body>
 
 </html>
